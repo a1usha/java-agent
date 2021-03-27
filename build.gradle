@@ -1,0 +1,29 @@
+plugins {
+    id 'java'
+}
+
+group 'org.example'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+
+    // https://mvnrepository.com/artifact/org.javassist/javassist
+    implementation group: 'org.javassist', name: 'javassist', version: '3.27.0-GA'
+}
+
+//libsDirName = "$rootDir"
+
+jar {
+    manifest {
+        attributes "Premain-Class": "ru.nsu.fit.ojp.ushaev.ojp_3.MyJavaAgent"
+    }
+
+    from {
+        configurations.runtimeClasspath.collect { it.isDirectory() ? it : zipTree(it) }
+    }
+}

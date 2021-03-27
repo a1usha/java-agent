@@ -1,0 +1,1 @@
+gradle jar && java -javaagent:build/libs/ojp_3-1.0-SNAPSHOT.jar TransactionProcessor.java

@@ -1,0 +1,5 @@
+ru/nsu/fit/ojp/ushaev/ojp_3/TimeRegistry.java
+ ru.nsu.fit.ojp.ushaev.ojp_3.TimeRegistry
+ru/nsu/fit/ojp/ushaev/ojp_3/MyJavaAgent.java
+ ru.nsu.fit.ojp.ushaev.ojp_3.MyJavaAgent
+ ru.nsu.fit.ojp.ushaev.ojp_3.MyJavaAgent$MyTransformer
